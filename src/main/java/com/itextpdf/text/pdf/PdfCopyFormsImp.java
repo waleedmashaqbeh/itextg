@@ -1,5 +1,5 @@
 /*
- * $Id: PdfCopyFormsImp.java 6134 2013-12-23 13:15:14Z blowagie $
+ * $Id: PdfCopyFormsImp.java 6425 2014-06-20 10:26:09Z achingarev $
  *
  * This file is part of the iText (R) project.
  * Copyright (c) 1998-2014 iText Group NV
@@ -55,6 +55,7 @@ import com.itextpdf.text.pdf.AcroFields.Item;
  * Allows you to add one (or more) existing PDF document(s)
  * and add the form(s) of (an)other PDF document(s).
  * @since 2.1.5
+ * @deprecated since 5.5.2
  */
 class PdfCopyFormsImp extends PdfCopyFieldsImp {
 
@@ -86,6 +87,9 @@ class PdfCopyFormsImp extends PdfCopyFieldsImp {
         }
         reader.shuffleSubsetNames();
         readers2intrefs.put(reader, new IntHashtable());
+
+        visited.put(reader, new IntHashtable());
+
         fields.add(reader.getAcroFields());
         updateCalculationOrder(reader);
     }
