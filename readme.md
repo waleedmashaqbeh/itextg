@@ -16,3 +16,4 @@ Only commercial licensees have access to commercial iText support.
 ============ THE AFFERO GENERAL PUBLIC LICENSE (AGPL) ============
 
 While the AGPL license has no direct financial cost there are clear requirements for AGPL use. Buying a commercial license is mandatory as soon as you develop activities involving the iText software without disclosing the source code of your own applications.
+Example http://www.codeproject.com/Articles/986574/Android-iText-Pdf-Example
